@@ -343,6 +343,45 @@ img {
   margin: 0;
 }
 
+/* Clients */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list > .item {
+  width: calc((100% / 12) * 6);
+}
+.clients-link > .icon {
+  color: var(--social-icon-color);
+}
+
+.clients-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-icon-color);
+  border-radius: 4px;
+}
+
 /* Footer */
 .footer {
   background-color: var(--secondary-bg-color);
