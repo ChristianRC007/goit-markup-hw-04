@@ -363,12 +363,14 @@ img {
 
 .clients-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .clients-list > .item {
-  width: calc((100% / 12) * 6);
+  width: calc((100% - 150) / 6);
 }
 .clients-link > .icon {
+  margin: 0;
   color: var(--social-icon-color);
 }
 
@@ -380,6 +382,15 @@ img {
   height: 90px;
   border: 1px solid var(--social-icon-color);
   border-radius: 4px;
+  padding: 20px;
+}
+
+.clients-logo:hover > .clients-link .icon {
+  color: var(--accent-color);
+}
+
+.clients-logo:hover > .clients-link {
+  border: 1px solid var(--accent-color);
 }
 
 /* Footer */
@@ -387,6 +398,15 @@ img {
   background-color: var(--secondary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress-box {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -415,6 +435,31 @@ img {
   text-decoration: none;
 }
 
+.social-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-box-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+
+  margin-bottom: 20px;
+}
+
+.social-box .social-link {
+  color: var(--main-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-box .social-link:hover,
+.social-box .social-link:focus {
+  background-color: var(--accent-color);
+}
 /* Визуал текста для Портфолио */
 .portfolio {
   padding: 94px 0;
